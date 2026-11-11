@@ -8,7 +8,7 @@ Follow the conventions in @Coding_Guidelines.md.
 
 ## Project
 
-Fossify Messages: an offline SMS/MMS app for Android (`org.fossify.messages`), single Gradle module `:app`, Kotlin + View Binding (no Compose; the Compose detekt rules are only there as a lint plugin). Depends on the shared `org.fossify:commons` library (`libs.fossify.commons`) for base activities, dialogs, theming and helpers, and `org.fossify:mmslib` for MMS sending. Versions live in `gradle/libs.versions.toml`; `VERSION_NAME`/`VERSION_CODE`/`APP_ID` live in `gradle.properties`. minSdk 26, Java/Kotlin target 17.
+Tidings (a fork of Fossify Messages): an offline SMS/MMS app for Android (`com.rajatroy.tidings`), single Gradle module `:app`, Kotlin + View Binding (no Compose; the Compose detekt rules are only there as a lint plugin). Depends on the shared `org.fossify:commons` library (`libs.fossify.commons`) for base activities, dialogs, theming and helpers, and `org.fossify:mmslib` for MMS sending. Versions live in `gradle/libs.versions.toml`; `VERSION_NAME`/`VERSION_CODE`/`APP_ID` live in `gradle.properties`. minSdk 26, Java/Kotlin target 17.
 
 ## Commands
 
@@ -29,7 +29,7 @@ Fossify Messages: an offline SMS/MMS app for Android (`org.fossify.messages`), s
 
 ## Architecture
 
-All code is under `app/src/main/kotlin/org/fossify/messages/`.
+All code is under `app/src/main/kotlin/com/rajatroy/tidings/`.
 
 **Two sources of truth.** The Android system SMS/MMS provider (`content://sms`, `content://mms`) is the canonical message store; the app reads and writes it directly (`extensions/Context.kt` has `getMessages`, `getConversations`, `getThreadParticipants`, etc.; `helpers/MessagesReader.kt`/`MessagesWriter.kt` are used for backup import/export). A Room database (`databases/MessagesDatabase.kt`, DB name `conversations.db`, DAOs in `interfaces/`) is a local cache/extension layer: cached conversations, messages, attachments, drafts, and the recycle bin (`RecycleBinMessage`) and archive state, which the system provider has no notion of. Accessors are `Context.conversationsDB` / `messagesDB` etc. in `extensions/Context.kt`. When changing a Room entity, bump `version` and add a `MIGRATION_x_y` in `MessagesDatabase.getInstance`; note `fallbackToDestructiveMigration()` is on, so a missing migration silently wipes the cache instead of crashing.
 

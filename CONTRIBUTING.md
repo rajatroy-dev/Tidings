@@ -1,8 +1,11 @@
 ### Reporting
-Before you report something, read the reporting rules [here](https://github.com/FossifyOrg/General-Discussion#how-do-i-suggest-an-improvement-ask-a-question-or-report-an-issue) please.
+Please search the [existing issues](https://github.com/rajatroy-dev/Tidings/issues) and [discussions](https://github.com/rajatroy-dev/Tidings/discussions) first, then open a new issue using the matching template.
 
 ### Contributing as a developer
-Some instructions about code style and everything that has to be done to increase the chance of your code getting accepted can be found at the [General Discussion](https://github.com/FossifyOrg/General-Discussion#contribution-rules-for-developers) section. 
+Open a pull request against `main`. Keep changes focused, follow `Coding_Guidelines.md` and `.editorconfig`, make sure `./gradlew detekt` and `./gradlew lintFossDebug` introduce no new findings, and add user-facing changes under `## [Unreleased]` in `CHANGELOG.md`.
 
 ### Contributing as a non developer
-In case you just want to for example improve a translation, you can find the way of doing it [here](https://github.com/FossifyOrg/General-Discussion#how-can-i-suggest-an-edit-to-a-file).
+Improvements to translations or documentation are welcome as pull requests too. Only edit the default `app/src/main/res/values/strings.xml` for new strings; translated files are managed separately.
+
+### License
+Tidings is licensed under the GNU GPL v3. By contributing you agree that your contributions are licensed under the same terms.

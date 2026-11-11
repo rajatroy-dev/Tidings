@@ -29,7 +29,7 @@
         errorLine1="import android.media.ExifInterface"
         errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/ImageCompressor.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/ImageCompressor.kt"
             line="7"
             column="8"/>
     </issue>
@@ -40,7 +40,7 @@
         errorLine1="        val exif = ExifInterface(imageFile.absolutePath)"
         errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/ImageCompressor.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/ImageCompressor.kt"
             line="125"
             column="20"/>
     </issue>
@@ -62,7 +62,7 @@
         errorLine1="class SplashActivity : BaseSplashActivity() {"
         errorLine2="      ~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/activities/SplashActivity.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/activities/SplashActivity.kt"
             line="6"
             column="7"/>
     </issue>
@@ -139,7 +139,7 @@
         errorLine1="        when (getType(i)) {"
         errorLine2="        ~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/extensions/Cursor.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/extensions/Cursor.kt"
             line="12"
             column="9"/>
     </issue>
@@ -2031,7 +2031,7 @@
         errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
         errorLine2="                 ~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/receivers/RescheduleAlarmsReceiver.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/receivers/RescheduleAlarmsReceiver.kt"
             line="13"
             column="18"/>
     </issue>
@@ -2042,7 +2042,7 @@
         errorLine1="    override fun onReceive(context: Context, intent: Intent) {"
         errorLine2="                 ~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/receivers/SmsReceiver.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/receivers/SmsReceiver.kt"
             line="32"
             column="18"/>
     </issue>
@@ -2075,7 +2075,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/adapters/ContactsAdapter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/adapters/ContactsAdapter.kt"
             line="60"
             column="13"/>
     </issue>
@@ -2086,7 +2086,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/adapters/SearchResultsAdapter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/adapters/SearchResultsAdapter.kt"
             line="61"
             column="13"/>
     </issue>
@@ -2097,7 +2097,7 @@
         errorLine1="            notifyDataSetChanged()"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/adapters/SearchResultsAdapter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/adapters/SearchResultsAdapter.kt"
             line="64"
             column="13"/>
     </issue>
@@ -2222,7 +2222,7 @@
     <issue
         id="UnusedResources"
         message="The resource `R.string.package_name` appears to be unused"
-        errorLine1="    &lt;string name=&quot;package_name&quot;>org.fossify.messages&lt;/string>"
+        errorLine1="    &lt;string name=&quot;package_name&quot;>com.rajatroy.tidings&lt;/string>"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~">
         <location
             file="src/main/res/values/donottranslate.xml"
@@ -2346,7 +2346,7 @@
         errorLine1="        prefs.edit().putInt(USE_SIM_ID_PREFIX + number, SIMId).apply()"
         errorLine2="        ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="14"
             column="9"/>
     </issue>
@@ -2357,7 +2357,7 @@
         errorLine1="        set(showCharacterCounter) = prefs.edit()"
         errorLine2="                                    ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="21"
             column="37"/>
     </issue>
@@ -2368,7 +2368,7 @@
         errorLine1="        set(useSimpleCharacters) = prefs.edit()"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="26"
             column="36"/>
     </issue>
@@ -2379,7 +2379,7 @@
         errorLine1="        set(sendOnEnter) = prefs.edit().putBoolean(SEND_ON_ENTER, sendOnEnter).apply()"
         errorLine2="                           ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="31"
             column="28"/>
     </issue>
@@ -2390,7 +2390,7 @@
         errorLine1="        set(enableDeliveryReports) = prefs.edit()"
         errorLine2="                                     ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="35"
             column="38"/>
     </issue>
@@ -2401,7 +2401,7 @@
         errorLine1="        set(sendLongMessageMMS) = prefs.edit().putBoolean(SEND_LONG_MESSAGE_MMS, sendLongMessageMMS)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="40"
             column="35"/>
     </issue>
@@ -2412,7 +2412,7 @@
         errorLine1="        set(sendGroupMessageMMS) = prefs.edit()"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="45"
             column="36"/>
     </issue>
@@ -2423,7 +2423,7 @@
         errorLine1="        set(lockScreenVisibilitySetting) = prefs.edit()"
         errorLine2="                                           ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="53"
             column="44"/>
     </issue>
@@ -2434,7 +2434,7 @@
         errorLine1="        set(mmsFileSizeLimit) = prefs.edit().putLong(MMS_FILE_SIZE_LIMIT, mmsFileSizeLimit).apply()"
         errorLine2="                                ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="58"
             column="33"/>
     </issue>
@@ -2445,7 +2445,7 @@
         errorLine1="        set(pinnedConversations) = prefs.edit()"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="62"
             column="36"/>
     </issue>
@@ -2456,7 +2456,7 @@
         errorLine1="        set(blockedKeywords) = prefs.edit().putStringSet(BLOCKED_KEYWORDS, blockedKeywords).apply()"
         errorLine2="                               ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="84"
             column="32"/>
     </issue>
@@ -2467,7 +2467,7 @@
         errorLine1="        set(exportSms) = prefs.edit().putBoolean(EXPORT_SMS, exportSms).apply()"
         errorLine2="                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="96"
             column="26"/>
     </issue>
@@ -2478,7 +2478,7 @@
         errorLine1="        set(exportMms) = prefs.edit().putBoolean(EXPORT_MMS, exportMms).apply()"
         errorLine2="                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="100"
             column="26"/>
     </issue>
@@ -2489,7 +2489,7 @@
         errorLine1="        set(importSms) = prefs.edit().putBoolean(IMPORT_SMS, importSms).apply()"
         errorLine2="                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="104"
             column="26"/>
     </issue>
@@ -2500,7 +2500,7 @@
         errorLine1="        set(importMms) = prefs.edit().putBoolean(IMPORT_MMS, importMms).apply()"
         errorLine2="                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="108"
             column="26"/>
     </issue>
@@ -2511,7 +2511,7 @@
         errorLine1="        set(wasDbCleared) = prefs.edit().putBoolean(WAS_DB_CLEARED, wasDbCleared).apply()"
         errorLine2="                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="112"
             column="29"/>
     </issue>
@@ -2522,7 +2522,7 @@
         errorLine1="        set(keyboardHeight) = prefs.edit().putInt(SOFT_KEYBOARD_HEIGHT, keyboardHeight).apply()"
         errorLine2="                              ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="116"
             column="31"/>
     </issue>
@@ -2533,7 +2533,7 @@
         errorLine1="        set(useRecycleBin) = prefs.edit().putBoolean(USE_RECYCLE_BIN, useRecycleBin).apply()"
         errorLine2="                             ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="120"
             column="30"/>
     </issue>
@@ -2544,7 +2544,7 @@
         errorLine1="        set(lastRecycleBinCheck) = prefs.edit().putLong(LAST_RECYCLE_BIN_CHECK, lastRecycleBinCheck)"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="124"
             column="36"/>
     </issue>
@@ -2555,7 +2555,7 @@
         errorLine1="        set(isArchiveAvailable) = prefs.edit().putBoolean(IS_ARCHIVE_AVAILABLE, isArchiveAvailable)"
         errorLine2="                                  ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="129"
             column="35"/>
     </issue>
@@ -2566,7 +2566,7 @@
         errorLine1="        set(customNotifications) = prefs.edit()"
         errorLine2="                                   ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="134"
             column="36"/>
     </issue>
@@ -2577,7 +2577,7 @@
         errorLine1="        set(lastBlockedNumbersExportPath) = prefs.edit()"
         errorLine2="                                            ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="147"
             column="45"/>
     </issue>
@@ -2588,7 +2588,7 @@
         errorLine1="        set(keepConversationsArchived) = prefs.edit()"
         errorLine2="                                         ~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/Config.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/Config.kt"
             line="152"
             column="42"/>
     </issue>
@@ -2599,7 +2599,7 @@
         errorLine1="        val uri = if (isQPlus()) Mms.Part.CONTENT_URI else Uri.parse(&quot;content://mms/part&quot;)"
         errorLine2="                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesReader.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesReader.kt"
             line="189"
             column="60"/>
     </issue>
@@ -2610,7 +2610,7 @@
         errorLine1="            Uri.parse(&quot;content://mms/part/$partId&quot;)"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesReader.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesReader.kt"
             line="258"
             column="13"/>
     </issue>
@@ -2621,7 +2621,7 @@
         errorLine1="            Uri.parse(&quot;content://mms/$messageId/addr&quot;)"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesReader.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesReader.kt"
             line="277"
             column="13"/>
     </issue>
@@ -2632,7 +2632,7 @@
         errorLine1="            Uri.parse(&quot;content://mms/$messageId/addr&quot;)"
         errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesWriter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesWriter.kt"
             line="110"
             column="13"/>
     </issue>
@@ -2643,7 +2643,7 @@
         errorLine1="                Uri.parse(&quot;content://mms/$messageId/addr&quot;)"
         errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesWriter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesWriter.kt"
             line="133"
             column="17"/>
     </issue>
@@ -2654,7 +2654,7 @@
         errorLine1="            val uri = Uri.parse(&quot;content://mms/${messageId}/part&quot;)"
         errorLine2="                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesWriter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesWriter.kt"
             line="145"
             column="23"/>
     </issue>
@@ -2665,7 +2665,7 @@
         errorLine1="        val uri = Uri.parse(&quot;content://mms/${messageId}/part&quot;)"
         errorLine2="                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/helpers/MessagesWriter.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/helpers/MessagesWriter.kt"
             line="166"
             column="19"/>
     </issue>
@@ -2676,7 +2676,7 @@
         errorLine1="                    Uri.parse(&quot;${Sms.CONTENT_URI}/${messageId}&quot;)"
         errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/messaging/MessagingUtils.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/messaging/MessagingUtils.kt"
             line="70"
             column="21"/>
     </issue>
@@ -2852,7 +2852,7 @@
         errorLine1="                exportBlockedKeywordsFilename.setText(&quot;${activity.getString(R.string.blocked_keywords)}_${activity.getCurrentFormattedDateTime()}&quot;)"
         errorLine2="                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
         <location
-            file="src/main/kotlin/org/fossify/messages/dialogs/ExportBlockedKeywordsDialog.kt"
+            file="src/main/kotlin/com/rajatroy/tidings/dialogs/ExportBlockedKeywordsDialog.kt"
             line="37"
             column="55"/>
     </issue>
