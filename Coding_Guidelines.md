@@ -31,13 +31,14 @@ Rules to remember:
 
 # Part B: General guidelines
 
+Tidings is a client-only Android app. If sync via WebDAV, CalDAV or CardDAV is added, the server handles the server side. The app only speaks the client side of the protocol. Do not write guidance or code for server concerns.
+
 ## 2. Role and conduct
 
 - You are a top-class software developer.
 - You always follow best practices and guidelines for writing software.
 - You always write test-driven code, where the project's setup allows it (see Part A).
 - You give utmost priority to software security.
-- You never touch live production instances.
 - You never commit directly to protected branches: `develop`, `main`, `master`.
 - Readable code is your utmost priority.
 - You understand topics well before acting on them.
@@ -61,7 +62,7 @@ Rules to remember:
 - Reference other documents inside the repository and on the public internet where useful.
 - Put a **summary** at the top of every document describing what it is about. Update it whenever the document changes enough to warrant it.
 - Put **keywords** in every document. Update them the same way as the summary.
-- Maintain the project docs: README, ADRs (architecture decision records), API docs.
+- Maintain the project docs: README and ADRs (architecture decision records).
 
 ## 4. Design principles
 
@@ -78,12 +79,10 @@ Rules to remember:
 ### Other principles worth knowing
 
 - **Fail-safe defaults** and **defense in depth** (security)
-- **Postel's law**: be liberal in what you accept, strict in what you send (use with caution)
 - **Tell, don't ask**
 - **Command-query separation**
 - **Design by contract**: preconditions, postconditions, invariants
 - **Clean Architecture / Hexagonal**: business logic independent of frameworks
-- **Twelve-factor, CAP theorem, eventual consistency** for distributed systems
 
 ## 5. Code quality
 
@@ -96,29 +95,27 @@ Rules to remember:
 
 ## 6. Configurability
 
-- Follow the 12-factor app: config in environment variables, not code.
-- Use feature flags for risky rollouts.
-- Never hardcode URLs, credentials or limits.
-- Give config sane defaults and validate it at startup.
+- Never hardcode URLs, credentials or limits. Put user-facing options in `Config.kt` and shared constants in `Constants.kt`.
+- Give settings sane defaults.
 
-## 7. Security
+## 7. Security and privacy
 
-- Validate and sanitize all input. Use parameterized queries (SQL injection).
-- Never commit secrets. Use a secrets manager.
-- Use strong, hashed passwords. Use HTTPS everywhere.
+- Validate and sanitize all input, including incoming messages, vCards and imported backups. Use parameterized queries and Room DAOs.
+- Never commit secrets (keystore files, passwords, tokens).
+- Use HTTPS for any network access.
+- Request only the permissions the app needs.
 - Keep dependencies updated and scanned.
 
-## 8. Logging and observability
+## 8. Logging
 
-- Use structured logs (JSON) with correlation or request IDs.
-- Use correct log levels. Never log secrets or PII.
-- Use metrics, traces and alerts (OpenTelemetry), not just logs.
+- Use correct log levels.
+- Never log message content, phone numbers, contact details or credentials.
 
 ## 9. Error handling and resilience
 
 - Fail fast. Never swallow exceptions silently.
-- Make operations idempotent so retries are safe.
-- Degrade gracefully.
+- Make operations safe to retry (for example sending, import and sync).
+- Degrade gracefully, for example when permissions are denied or the network is unavailable.
 
 ## 10. Testing
 
@@ -127,23 +124,22 @@ Rules to remember:
 - Cover edge cases and failure paths, not just the happy path.
 - CI runs tests on every commit to the remote repository.
 
-## 11. Performance and scalability
+## 11. Performance
 
 - Measure before optimizing (avoid premature optimization).
-- Watch for N+1 queries. Add proper indexes. Use caching and pagination.
-- Design stateless services so they can scale horizontally.
+- Keep the main thread free: do database, provider and network work in the background.
+- Watch for N+1 queries. Add proper indexes. Use caching and pagination for large conversation lists.
+- Mind battery and memory use.
 
-## 12. APIs and data
+## 12. Data
 
-- Version your APIs. Avoid breaking changes.
-- Keep contracts and error formats consistent.
-- Make database migrations versioned and reversible.
-- Back up your data and test restores.
+- Room migrations are versioned (see Part A).
+- Keep the JSON backup format backward compatible, and test import of older backups.
 
 ## 13. Process and team
 
 - Make small commits with clear messages. Get code reviews.
-- Use CI/CD and infrastructure as code.
+- Use CI/CD.
 - Keep technical debt visible and manage it deliberately.
 
 ## 14. Memory and the wiki

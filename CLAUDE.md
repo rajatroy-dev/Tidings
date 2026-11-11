@@ -8,7 +8,11 @@ Follow the conventions in @Coding_Guidelines.md.
 
 ## Project
 
-Tidings (a fork of Fossify Messages): an offline SMS/MMS app for Android (`com.rajatroy.tidings`), single Gradle module `:app`, Kotlin + View Binding (no Compose; the Compose detekt rules are only there as a lint plugin). Depends on the shared `org.fossify:commons` library (`libs.fossify.commons`) for base activities, dialogs, theming and helpers, and `org.fossify:mmslib` for MMS sending. Versions live in `gradle/libs.versions.toml`; `VERSION_NAME`/`VERSION_CODE`/`APP_ID` live in `gradle.properties`. minSdk 26, Java/Kotlin target 17.
+- Tidings: an offline SMS/MMS organizer app for Android (`com.rajatroy.tidings`), originally forked from Fossify Messages, which is the old project and is not what this repo is now.
+- Single Gradle module `:app`, Kotlin + View Binding (no Compose; the Compose detekt rules are only there as a lint plugin).
+- Depends on the shared `org.fossify:commons` library (`libs.fossify.commons`) for base activities, dialogs, theming and helpers, and `org.fossify:mmslib` for MMS sending.
+- Versions live in `gradle/libs.versions.toml`; `VERSION_NAME`/`VERSION_CODE`/`APP_ID` live in `gradle.properties`. 
+- minSdk 26, Java/Kotlin target 17.
 
 ## Commands
 
